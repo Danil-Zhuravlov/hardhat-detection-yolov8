@@ -1,0 +1,9 @@
+path: /dataset # if doesn't work, try to use the full path to the folder
+train: images/train
+val: images/train
+
+names:
+  # make sure to check the index of each class based on the annotations
+  # and assign "index: class" accordingly.
+  0: with_hard_hat 
+  1: without_hard_hat
