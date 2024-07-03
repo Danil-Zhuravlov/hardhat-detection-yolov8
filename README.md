@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 ## Train your own model
 
-1. Gather enough images for the training dataset and put them in `dataset/images/train/`
+1. Gather enough images for the training dataset and put them in `dataset/images/train/` (current model trained on set of ~500 images)
 2. Annotate images, save in Yolo format, and put the annotations in `dataset/labels/train/`
 3. Open `config.yaml` and ensure you set the right index and class name based on your annotations.
 <img width="925" alt="image" src="https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/36d35c51-0100-41f5-bba7-9dd0d25bf822">
