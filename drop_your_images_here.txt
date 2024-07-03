@@ -1,1 +1,0 @@
-drop your images that you want to use for training in this folder.
