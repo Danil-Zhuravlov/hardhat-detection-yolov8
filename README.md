@@ -1,4 +1,4 @@
-# Hardhat Detection YOLOv8
+# Hardhat Detection YOLOv8 👷
 
 Ensuring safety in industrial environments is paramount, and it's crucial to verify that workers adhere to safety protocols in real time. Traditional methods rely on overlay techniques that determine the intersection of the head and helmet, which demand substantial processing power. Is it feasible to achieve this without extensive computational resources? Absolutely, and I'll explain how I tackled this challenge!
 
@@ -30,7 +30,7 @@ To create a robust model capable of accurately detecting hardhats in an industri
         - Labeling images without hardhats.
         - Excluding other types of helmets to ensure the model focuses solely on factory hardhats.
 
-### Model Training
+### Model Training 🧑‍🏫
 Utilized the YOLOv8 model, a state-of-the-art object detection algorithm, to train our hardhat detection model:
 
 1. **Framework and Tools**:
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ```
 3. Run `main.py`.
 
-## Train your own model
+## Train your own model 🤖
 
 1. Gather enough images for the training dataset and put them in `dataset/images/train/` (current model trained on set of ~500 images)
 2. Annotate images, save in Yolo format, and put the annotations in `dataset/labels/train/`
@@ -67,11 +67,7 @@ pip install -r requirements.txt
 
 7. Run `main.py`!
 
-
-
 ## Future Improvements 🔮
 - Train the model using 100 epochs instead of 50.
 - Increase the amount of images with different environment.
 - Create an app to make it user-friendly.
-
-
