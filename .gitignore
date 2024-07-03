@@ -163,7 +163,5 @@ cython_debug/
 
 # Project specific files
 product_videos/
-images/
-labels/
 .mp4
 .jpg

@@ -1,0 +1,1 @@
+drop your labels in this folder in the Yolo format.
