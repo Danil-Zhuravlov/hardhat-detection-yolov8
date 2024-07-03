@@ -2,6 +2,15 @@
 
 Ensuring safety in industrial environments is paramount, and it's crucial to verify that workers adhere to safety protocols in real time. Traditional methods rely on overlay techniques that determine the intersection of the head and helmet, which demand substantial processing power. Is it feasible to achieve this without extensive computational resources? Absolutely, and I'll explain how I tackled this challenge!
 
+## Table of Contents 📚
+- [Introduction📝](introduction-📝)
+- [Approach 🚀](approach-🚀)
+  - [Dataset Collection and Preparation](dataset-collection-and-preparation)
+  - [Model Training 🧑‍🏫](model-training-🧑‍🏫)
+- [Setup Instructions ⚙️](setup-instructions-⚙️)
+- [Train your own model 🤖](train-your-own-model-🤖)
+- [Future Improvements 🔮](future-improvements-🔮)
+
 ## Introduction 📝
 To foster a safety-oriented culture, our client aims to develop a computer vision model that can identify whether a worker is wearing a hardhat and interact with them based on safety protocols. The initial version of this model utilized an overlay technique involving two objects: the person and the hardhat. However, this approach proved to be computationally intensive and less effective than intended.
 
@@ -37,8 +46,13 @@ Utilized the YOLOv8 model, a state-of-the-art object detection algorithm, to tra
     - Employed the Ultralytics library in Python for model training, which provides an efficient and user-friendly interface for implementing YOLO models.
 
 2. **Training Process**:
+    - Split the annotated dataset into training and validation sets to evaluate the model's performance.
+    - Configured the YOLOv8 model with appropriate hyperparameters to optimize detection accuracy and speed.
     - Trained the model on the annotated dataset, allowing it to learn and distinguish between workers with and without hardhats.
 
+3. **Evaluation**:
+    - Assessed the model's performance using validation data to ensure high accuracy in real-world scenarios.
+    - Fine-tuned the model as necessary to address any detection inaccuracies or performance issues.
 
 By following this approach, I developed a highly efficient and accurate hardhat detection model that operates with minimal computational resources, ensuring real-time applicability in industrial settings.
 
@@ -47,9 +61,9 @@ By following this approach, I developed a highly efficient and accurate hardhat 
 To run this project locally, follow these steps:
 1. Clone this repository.
 2. Install [PyTorch](https://pytorch.org/get-started/locally/) and the required libraries listed in `requirements.txt`.
-```
-pip install -r requirements.txt
-```
+    ```
+    pip install -r requirements.txt
+    ```
 3. Run `main.py`.
 
 ## Train your own model 🤖
@@ -57,17 +71,15 @@ pip install -r requirements.txt
 1. Gather enough images for the training dataset and put them in `dataset/images/train/` (current model trained on set of ~500 images)
 2. Annotate images, save in Yolo format, and put the annotations in `dataset/labels/train/`
 3. Open `config.yaml` and ensure you set the right index and class name based on your annotations.
-<img width="925" alt="image" src="https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/36d35c51-0100-41f5-bba7-9dd0d25bf822">
-
+    <img width="925" alt="image" src="https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/36d35c51-0100-41f5-bba7-9dd0d25bf822">
 5. Edit `train.py` file by specifying the amount of epochs. 50-100 epochs are recommended for the best result. (It will take some time if you run locally)
-<img width="925" alt="image" src="https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/0e92e0ff-d3fa-4160-86dd-3aca0a980d77">
-
+    <img width="925" alt="image" src="https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/0e92e0ff-d3fa-4160-86dd-3aca0a980d77">
 6. Move `best.pt` file from `runs/detect/train/weights` to `hardhat-detection-yolov8/` folder, and replace the file.
-<img width="1032" alt="image" src="https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/86c542d2-6bb5-4b2c-9640-e767b132cf15">
-
+    <img width="1032" alt="image" src="https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/86c542d2-6bb5-4b2c-9640-e767b132cf15">
 7. Run `main.py`!
 
 ## Future Improvements 🔮
 - Train the model using 100 epochs instead of 50.
 - Increase the amount of images with different environment.
 - Create an app to make it user-friendly.
+
