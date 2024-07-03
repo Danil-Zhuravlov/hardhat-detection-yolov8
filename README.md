@@ -2,6 +2,8 @@
 
 Ensuring safety in industrial environments is paramount, and it's crucial to verify that workers adhere to safety protocols in real time. Traditional methods rely on overlay techniques that determine the intersection of the head and helmet, which demand substantial processing power. Is it feasible to achieve this without extensive computational resources? Absolutely, and I'll explain how I tackled this challenge!
 
+![val_batch2_labels](https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/d7363c3b-0a1f-46c3-8302-0c2a90b36f8c)
+
 ## Table of Contents 📚
 - [Introduction📝](introduction-📝)
 - [Approach 🚀](approach-🚀)
