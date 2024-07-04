@@ -22,6 +22,27 @@ To foster a safety-oriented culture, our client aims to develop a computer visio
 
 In this project, I'll demonstrate a more efficient solution leveraging the YOLOv8 model, which significantly reduces computational demands while improving accuracy and speed.
 
+## Demo 📸
+
+It works well in various scenarios, including:
+
+- **Single Person with Hardhat**:
+
+![alt text](image.png)
+
+- **Person doesn't wear the Hardhat but holds it in hands**:
+
+![alt text](image-2.png)
+
+ - **Angles from the top**:
+
+![alt text](image-3.png)
+
+- **Hardhat without a person won't be detected, person must wear it!**
+
+![alt text](image-4.png)
+
+
 ## Approach 🚀
 
 ### Dataset Collection and Preparation 📂
