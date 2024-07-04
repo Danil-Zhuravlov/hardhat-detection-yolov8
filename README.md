@@ -28,19 +28,19 @@ It works well in various scenarios, including:
 
 - **Single Person with Hardhat**:
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 - **Person doesn't wear the Hardhat but holds it in hands**:
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
  - **Angles from the top**:
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 - **Hardhat without a person won't be detected, person must wear it!**
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 
 ## Approach 🚀
