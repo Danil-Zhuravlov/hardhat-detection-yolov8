@@ -5,7 +5,7 @@ Ensuring safety in industrial environments is paramount, and it's crucial to ver
 ![val_batch2_labels](https://github.com/Danil-Zhuravlov/hardhat-detection-yolov8/assets/141956548/d7363c3b-0a1f-46c3-8302-0c2a90b36f8c)
 
 ## Table of Contents 📚
-- [Introduction📝](introduction-📝)
+- [Introduction 📝](##Introduction-📝)
 - [Approach 🚀](approach-🚀)
   - [Dataset Collection and Preparation](dataset-collection-and-preparation)
   - [Model Training 🧑‍🏫](model-training-🧑‍🏫)
@@ -82,6 +82,6 @@ To run this project locally, follow these steps:
 
 ## Future Improvements 🔮
 - Train the model using 100 epochs instead of 50.
-- Increase the amount of images with different environment.
+- Increase the amount of images with different environments and angles.
 - Create an app to make it user-friendly.
 
